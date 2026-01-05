@@ -223,14 +223,12 @@ nav a:hover {
     .hero-text span {
         font-size: 1.6rem;
     }
-}
-
-@media (max-width: 1024px) {
-
     .section {
         grid-template-columns: 1fr;
     }
-
+    section .info-card {
+        margin-bottom: 32px;
+    }
 }
 
 
@@ -259,6 +257,18 @@ nav a:hover {
 
     .cards {
         gap: 24px;
+        grid-template-columns: 1fr ;
+    }
+    section .info-card {
+        padding: 26px;
+        min-width: 0 ;
+        width: 100% ;
+    }
+
+    .container {
+        max-width: 100% ;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -279,41 +289,10 @@ nav a:hover {
         width: 220px;
         height: 300px;
     }
-}
 
-/* ================= Info Cards ================= */
-section .info-card {
-    max-width: 100%;
-}
-
-@media (max-width: 1024px) {
-    section .info-card {
-        margin-bottom: 32px;
+    .section {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 768px) {
-    section .info-card {
-        padding: 26px;
-    }
-}
-
-/* ================= MOBILE AUTO-SCALING FIX ================= */
-@media (max-width: 768px) {
-
-    .cards {
-        grid-template-columns: 1fr !important;
-    }
-
-    .info-card {
-        min-width: 0 !important;
-        width: 100% !important;
-    }
-
-    .container {
-        max-width: 100% !important;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
 
