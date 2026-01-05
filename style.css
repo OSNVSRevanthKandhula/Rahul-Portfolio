@@ -207,93 +207,145 @@ nav a:hover {
     color: #6f4cff;
 }
 
-/* =====================================================
-   📱 MOBILE RESPONSIVENESS (ONLY ADDITION)
-   ===================================================== */
 
-@media (max-width: 1024px) {
-    .hero-grid {
-        grid-template-columns: 1fr; /* STACK */
-    }
-
-    .hero-text h1 {
-        font-size: 2.4rem;
-    }
-
-    .hero-text span {
-        font-size: 1.6rem;
-    }
-    .section {
-        grid-template-columns: 1fr;
-    }
-    section .info-card {
-        margin-bottom: 32px;
-    }
-}
-
+/* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width: 768px) {
+
+    /* ---------- GLOBAL ---------- */
+
     html {
-        font-size: 16px; /* SCALE DOWN */
+        font-size: 16px;
     }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ---------- NAVBAR ---------- */
 
     .nav-inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 5vw;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 14px;
     }
 
     nav a {
-        margin-left: 0;
+        font-size: 0.95rem;
     }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    /* ---------- HERO ---------- */
 
     .hero {
-        padding: 40px 5vw;
+        padding: 70px 5vw;
+        background: radial-gradient(circle at top, #0ea5e9, transparent 55%);
     }
 
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .cards {
-        gap: 24px;
-        grid-template-columns: 1fr ;
-    }
-    section .info-card {
-        padding: 26px;
-        min-width: 0 ;
-        width: 100% ;
-    }
-
-    .container {
-        max-width: 100% ;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        font-size: 15px;
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
     }
 
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
+        line-height: 1.2;
     }
 
     .hero-text span {
         font-size: 1.4rem;
+        display: block;
+        margin-top: 8px;
     }
+
+    /* ---------- PROFILE IMAGE ---------- */
 
     .profile-image-wrapper {
         width: 220px;
         height: 300px;
+        margin: 0 auto;
     }
+
+    /* ---------- CARDS ---------- */
+
+    .hero-card,
+    .info-card {
+        padding: 22px;
+    }
+
+    /* ---------- SECTIONS ---------- */
 
     .section {
-        grid-template-columns: 2fr;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 26px;
+    }
+
+    /* ---------- GRID ---------- */
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .education-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    /* ---------- TEXT ---------- */
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .Justify-text {
+        text-align: left;
+    }
+
+    /* ---------- BUTTONS ---------- */
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    .primary,
+    .view-resume-btn {
+        justify-content: center;
+    }
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-details p {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .contact-details a {
+        word-break: break-word;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        font-size: 0.85rem;
+        padding: 22px 12px;
     }
 }
-
-
-
