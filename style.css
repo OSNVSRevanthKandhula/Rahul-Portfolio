@@ -289,7 +289,7 @@ section .info-card {
 
 @media (max-width: 768px) {
     section .info-card {
-        padding: 26px 1vw;
+        padding: 26px 1.4vw;
     }
 }
 
@@ -311,4 +311,5 @@ section .info-card {
         padding-right: 16px;
     }
 }
+
 
