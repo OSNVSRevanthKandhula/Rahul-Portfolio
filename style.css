@@ -283,13 +283,14 @@ section .info-card {
 
 @media (max-width: 1024px) {
     section .info-card {
-        padding:35px;
+        margin-bottom: 32px;
     }
 }
 
+
 @media (max-width: 768px) {
-    section .info-card {
-        padding:35px;
+.info-card {
+        padding: 26px;
     }
 }
 
@@ -301,11 +302,8 @@ section .info-card {
     }
 
     .info-card {
-    flex: 1;
-    min-width: 250px;
-    max-width: 400px;
-}
-
+        min-width: 0 !important;
+    }
 
     .container {
         max-width: 100% !important;
