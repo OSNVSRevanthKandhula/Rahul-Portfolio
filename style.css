@@ -283,13 +283,13 @@ section .info-card {
 
 @media (max-width: 1024px) {
     section .info-card {
-        margin-bottom: 32px;
+        padding:35px;
     }
 }
 
 @media (max-width: 768px) {
     section .info-card {
-        padding: 26px 0.5vw;
+        padding:35px;
     }
 }
 
@@ -301,9 +301,11 @@ section .info-card {
     }
 
     .info-card {
-        min-width: 0 !important;
-        width: 100% !important;
-    }
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
 
     .container {
         max-width: 100% !important;
@@ -311,6 +313,4 @@ section .info-card {
         padding-right: 16px;
     }
 }
-
-
 
