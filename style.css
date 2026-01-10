@@ -103,6 +103,7 @@ nav a:hover {
     background: linear-gradient(145deg, rgba(2,6,23,.9), rgba(15,23,42,.9));
     border: 1px solid #1e293b;
     border-radius: 16px;
+    padding: 35px;
     backdrop-filter: blur(8px);
 }
 
@@ -173,12 +174,11 @@ nav a:hover {
 }
 
 
-
-.info-card h4 {
+.education-cards .info-card h4 {
     font-size: 1.1rem;
 }
 
-.info-card p {
+.education-cards .info-card p {
     font-size: 0.9rem;
 }
 
@@ -278,7 +278,7 @@ nav a:hover {
 
 /* ================= Info Cards ================= */
 section .info-card {
-    max-width: 86%;
+    max-width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -289,7 +289,7 @@ section .info-card {
 
 @media (max-width: 768px) {
     section .info-card {
-        padding: 26px;
+        padding: 26px 1vw;
     }
 }
 
